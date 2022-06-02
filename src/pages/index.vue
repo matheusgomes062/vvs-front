@@ -18,7 +18,7 @@ const { t } = useI18n()
     </div>
     <p>
       <a rel="noreferrer" href="https://github.com/antfu/vitesse" target="_blank">
-        Vitesse
+        VVS_FRONT
       </a>
     </p>
     <p>
@@ -27,28 +27,43 @@ const { t } = useI18n()
 
     <div py-4 />
 
-    <input
-      id="input"
-      v-model="name"
-      :placeholder="t('intro.whats-your-name')"
-      :aria-label="t('intro.whats-your-name')"
-      type="text"
-      autocomplete="false"
-      p="x4 y2"
-      w="250px"
-      text="center"
-      bg="transparent"
-      border="~ rounded gray-200 dark:gray-700"
-      outline="none active:none"
-      @keydown.enter="go"
-    >
-    <label class="hidden" for="input">{{ t('intro.whats-your-name') }}</label>
+    <div flex flex-col items-center>
+      <input
+        id="input"
+        v-model="email"
+        :placeholder="t('login.email')"
+        :aria-label="t('login.email')"
+        type="text"
+        autocomplete="false"
+        p="x4 y2"
+        m="b2"
+        w="250px"
+        text="left"
+        bg="transparent"
+        border="~ rounded gray-200 dark:gray-700"
+        outline="none active:none"
+      >
+      <input
+        id="input"
+        v-model="password"
+        :placeholder="t('login.password')"
+        :aria-label="t('login.password')"
+        type="text"
+        autocomplete="false"
+        p="x4 y2"
+        w="250px"
+        text="left"
+        bg="transparent"
+        border="~ rounded gray-200 dark:gray-700"
+        outline="none active:none"
+      >
+      <label class="hidden" for="input">{{ t('login.password') }}</label>
+    </div>
 
     <div>
       <button
-        btn m-3 text-sm
-        :disabled="!name"
-        @click="go"
+        w="250px" btn cursor-pointer m-3 text-sm
+        :disabled="!email && !password"
       >
         {{ t('button.go') }}
       </button>
