@@ -1,12 +1,12 @@
 <script setup lang="ts">
-const user = useUserStore()
-const name = $ref(user.savedName)
+const email = ''
+const password = ''
 
-const router = useRouter()
-const go = () => {
-  if (name)
-    router.push(`/hi/${encodeURIComponent(name)}`)
-}
+// const router = useRouter()
+// const go = () => {
+//   if (name)
+//     router.push(`/hi/${encodeURIComponent(name)}`)
+// }
 
 const { t } = useI18n()
 </script>
