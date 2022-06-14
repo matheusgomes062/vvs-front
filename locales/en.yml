@@ -6,13 +6,13 @@ button:
   toggle_dark: Toggle dark mode
   toggle_langs: Change languages
 intro:
-  desc: Aplicação de cursos online - The Wise Dev
+  aka: Also known as
+  desc: TheWiseDev - Log in
   dynamic-route: Demo of dynamic route
   hi: Hi, {name}!
-  aka: Also known as
   whats-your-name: What's your name?
 login:
-  login: Login
   email: Email
+  login: Login
   password: Password
 not-found: Not found

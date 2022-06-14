@@ -2,12 +2,6 @@
 const email = ''
 const password = ''
 
-// const router = useRouter()
-// const go = () => {
-//   if (name)
-//     router.push(`/hi/${encodeURIComponent(name)}`)
-// }
-
 const { t } = useI18n()
 </script>
 

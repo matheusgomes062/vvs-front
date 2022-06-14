@@ -1,5 +1,5 @@
 describe('Device Tests', () => {
-  const url = 'http://localhost:3333/hi/Vitesse'
+  const url = 'http://localhost:3333'
   it('720p', () => {
     cy.viewport(1280, 720)
     cy.visit(url)
