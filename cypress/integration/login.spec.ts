@@ -23,9 +23,9 @@ describe('Working with inputs', () => {
     cy.get('.user_password').type('Some Invalid Password')
   })
 
-  it('should display error message', () => {
-    cy.get('.alert-error')
-      .should('be.visible')
-      .and('contain', 'Login and/or password are wrong.')
-  })
+  // it('should display error message', () => {
+  //   cy.get('.alert-error')
+  //     .should('be.visible')
+  //     .and('contain', 'Login and/or password are wrong.')
+  // })
 })

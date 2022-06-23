@@ -3,6 +3,11 @@ const email = ''
 const password = ''
 
 const { t } = useI18n()
+
+const login = () => {
+  // eslint-disable-next-line no-console
+  console.log('loggin')
+}
 </script>
 
 <template>
@@ -59,6 +64,7 @@ const { t } = useI18n()
       <button
         w="250px" btn cursor-pointer m-3 text-sm
         :disabled="!email && !password"
+        @click="login()"
       >
         {{ t('button.go') }}
       </button>
