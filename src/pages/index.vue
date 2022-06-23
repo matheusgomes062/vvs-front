@@ -6,6 +6,7 @@ const { t } = useI18n()
 </script>
 
 <template>
+  <title>TheWiseDev - Log in</title>
   <div>
     <div text-4xl>
       <div i-carbon-campsite inline-block />
@@ -23,8 +24,8 @@ const { t } = useI18n()
 
     <div flex flex-col items-center>
       <input
-        id="input"
         v-model="email"
+        class="user_email"
         :placeholder="t('login.email')"
         :aria-label="t('login.email')"
         type="text"
@@ -38,8 +39,8 @@ const { t } = useI18n()
         outline="none active:none"
       >
       <input
-        id="input"
         v-model="password"
+        class="user_password"
         :placeholder="t('login.password')"
         :aria-label="t('login.password')"
         type="password"
