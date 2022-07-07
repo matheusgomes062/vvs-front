@@ -1,12 +1,12 @@
 <script setup lang="ts">
-const email = ''
-const password = ''
+const email: string = $ref('')
+const password: string = $ref('')
 
 const { t } = useI18n()
 
 const login = () => {
   // eslint-disable-next-line no-console
-  console.log('loggin')
+  console.log('log gin')
 }
 </script>
 
@@ -14,7 +14,7 @@ const login = () => {
   <title>TheWiseDev - Log in</title>
   <div>
     <div text-4xl>
-      <div i-carbon-campsite inline-block />
+      <div class="accent-color" i-carbon-campsite inline-block />
     </div>
     <p>
       <a rel="noreferrer" href="https://github.com/antfu/vitesse" target="_blank">
@@ -63,7 +63,7 @@ const login = () => {
     <div>
       <button
         w="250px" btn cursor-pointer m-3 text-sm
-        :disabled="!email && !password"
+        :disabled="!email || !password"
         @click="login()"
       >
         {{ t('button.go') }}
