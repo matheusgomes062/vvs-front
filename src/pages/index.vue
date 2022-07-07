@@ -6,7 +6,7 @@ const { t } = useI18n()
 
 const login = () => {
   // eslint-disable-next-line no-console
-  console.log('log gin')
+  console.log('log in')
 }
 </script>
 
