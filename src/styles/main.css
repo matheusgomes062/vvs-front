@@ -1,5 +1,6 @@
 @import './markdown.css';
 @import './variables.css';
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap');
 
 html,
 body,
@@ -7,6 +8,8 @@ body,
   height: 100%;
   margin: 0;
   padding: 0;
+  font-family: 'Fira Sans', sans-serif;
+
 }
 
 h1,
