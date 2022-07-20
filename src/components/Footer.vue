@@ -10,9 +10,9 @@ const toggleLocales = () => {
 
 <template>
   <nav text-xl mt-6>
-    <RouterLink class="icon-btn mx-2" to="/" :title="t('button.home')">
+    <!-- <RouterLink class="icon-btn mx-2" to="/" :title="t('button.home')">
       <div i-carbon-campsite />
-    </RouterLink>
+    </RouterLink> -->
 
     <button class="icon-btn mx-2 accent" :title="t('button.toggle_dark')" @click="toggleDark()">
       <div i="carbon-sun dark:carbon-moon" />
@@ -22,11 +22,11 @@ const toggleLocales = () => {
       <div i-carbon-language />
     </a>
 
-    <RouterLink class="icon-btn mx-2" to="/about" :title="t('button.about')">
+    <a class="icon-btn mx-2" href="https://thewisedev.com.br/" target="_blank" :title="t('button.about')">
       <div i-carbon-dicom-overlay />
-    </RouterLink>
+    </a>
 
-    <a class="icon-btn mx-2" rel="noreferrer" href="https://github.com/antfu/vitesse" target="_blank" title="GitHub">
+    <a class="icon-btn mx-2" rel="noreferrer" href="https://github.com/matheusgomes062/vvs-front" target="_blank" title="GitHub">
       <div i-carbon-logo-github />
     </a>
   </nav>
