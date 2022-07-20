@@ -51,7 +51,7 @@ const shortUrl = () => {
 
     <div>
       <button
-        w="250px"
+        w="100px"
         btn
         cursor-pointer
         m-3
