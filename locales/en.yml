@@ -7,7 +7,7 @@ button:
   toggle_langs: Change languages
 intro:
   aka: Also known as
-  desc: TheWiseDev - Log in
+  desc: The WiseDev - URL Shortener
   dynamic-route: Demo of dynamic route
   hi: Hi, {name}!
   whats-your-name: What's your name?
@@ -15,4 +15,5 @@ login:
   email: Email
   login: Login
   password: Password
+url: URL
 not-found: Not found

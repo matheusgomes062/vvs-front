@@ -1,10 +1,10 @@
 <script setup lang="ts">
-const email: string = $ref('')
+const urlShortener: string = $ref('')
 const password: string = $ref('')
 
 const { t } = useI18n()
 
-const login = () => {
+const shortUrl = () => {
   // eslint-disable-next-line no-console
   console.log('log in')
 }
@@ -23,39 +23,30 @@ const login = () => {
       <!-- #endregion -->
     </div>
 
+    <div py-1 />
+
+    <p>
+      <em text-sm opacity-75>{{ t('intro.desc') }}</em>
+    </p>
+
     <div py-4 />
 
     <div flex flex-col items-center>
       <input
-        v-model="email"
-        class="user_email"
-        :placeholder="t('login.email')"
-        :aria-label="t('login.email')"
+        v-model="urlShortener"
+        class="url_shortener"
+        :placeholder="t('url')"
+        :aria-label="t('url')"
         type="text"
         autocomplete="false"
         p="x4 y2"
         m="b2"
-        w="250px"
+        w="550px"
         text="left"
         bg="transparent"
         border="~ rounded gray-200 dark:gray-700"
         outline="none active:none"
       >
-      <input
-        v-model="password"
-        class="user_password"
-        :placeholder="t('login.password')"
-        :aria-label="t('login.password')"
-        type="password"
-        autocomplete="false"
-        p="x4 y2"
-        w="250px"
-        text="left"
-        bg="transparent"
-        border="~ rounded gray-200 dark:gray-700"
-        outline="none active:none"
-      >
-      <label class="hidden" for="input">{{ t("login.password") }}</label>
     </div>
 
     <div>
@@ -65,8 +56,8 @@ const login = () => {
         cursor-pointer
         m-3
         text-sm
-        :disabled="!email || !password"
-        @click="login()"
+        :disabled="!urlShortener"
+        @click="shortUrl()"
       >
         {{ t("button.go") }}
       </button>
